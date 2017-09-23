@@ -1,0 +1,26 @@
+c:\users\lj\documents\visual studio 2015\Projects\Frenchfry\Frenchfry\bin\Debug\Frenchfry.dll
+c:\users\lj\documents\visual studio 2015\Projects\Frenchfry\Frenchfry\bin\Debug\Frenchfry.pdb
+c:\users\lj\documents\visual studio 2015\Projects\Frenchfry\Frenchfry\obj\Debug\Frenchfry.Properties.Resources.resources
+c:\users\lj\documents\visual studio 2015\Projects\Frenchfry\Frenchfry\obj\Debug\Frenchfry.csproj.GenerateResource.Cache
+c:\users\lj\documents\visual studio 2015\Projects\Frenchfry\Frenchfry\obj\Debug\Frenchfry.dll
+c:\users\lj\documents\visual studio 2015\Projects\Frenchfry\Frenchfry\obj\Debug\Frenchfry.pdb
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\bin\Debug\Frenchfry.dll
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\bin\Debug\Frenchfry.pdb
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\bin\Debug\GH_IO.dll
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\bin\Debug\Grasshopper.dll
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\bin\Debug\RhinoCommon.dll
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\bin\Debug\GH_Util.dll
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\bin\Debug\QWhale.Syntax.Parsers.dll
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\bin\Debug\QWhale.Editor.dll
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\bin\Debug\Mono.Cecil.dll
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\bin\Debug\QWhale.Syntax.dll
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\bin\Debug\QWhale.Common.dll
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\bin\Debug\GH_IO.xml
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\bin\Debug\Grasshopper.pdb
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\bin\Debug\Grasshopper.xml
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\bin\Debug\RhinoCommon.xml
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\obj\Debug\Frenchfry.csprojResolveAssemblyReference.cache
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\obj\Debug\Frenchfry.Properties.Resources.resources
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\obj\Debug\Frenchfry.csproj.GenerateResource.Cache
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\obj\Debug\Frenchfry.dll
+C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\obj\Debug\Frenchfry.pdb

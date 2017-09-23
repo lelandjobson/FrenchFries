@@ -1,0 +1,6 @@
+c:\users\lj\documents\visual studio 2015\Projects\Frenchfry\Frenchfry\bin\Frenchfry.dll
+c:\users\lj\documents\visual studio 2015\Projects\Frenchfry\Frenchfry\bin\Frenchfry.pdb
+c:\users\lj\documents\visual studio 2015\Projects\Frenchfry\Frenchfry\obj\Debug64\Frenchfry.Properties.Resources.resources
+c:\users\lj\documents\visual studio 2015\Projects\Frenchfry\Frenchfry\obj\Debug64\Frenchfry.csproj.GenerateResource.Cache
+c:\users\lj\documents\visual studio 2015\Projects\Frenchfry\Frenchfry\obj\Debug64\Frenchfry.dll
+c:\users\lj\documents\visual studio 2015\Projects\Frenchfry\Frenchfry\obj\Debug64\Frenchfry.pdb
