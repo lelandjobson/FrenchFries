@@ -10,10 +10,17 @@ namespace Frenchfry
     public class FlatFries
     {
 
-        public FryResults Results = new FryResults();
+        private FryResults results;
         private double tolerance = 0.0001;
-        private List<Mesh> friedMeshes;
+        private List<Mesh> friedMeshes = new List<Mesh>();
 
+        private void Init()
+        {
+            results = null;
+            results = new FryResults();
+
+            friedMeshes.Clear();
+        }
 
         public FlatFries(List<Curve> fryCurves, double thickness)
         {
@@ -48,15 +55,15 @@ namespace Frenchfry
             {
                 // Reparameterize Curves
                 crv.Domain = new Interval(0.0, 1.0);
-                Results.Curves.Add(Guid.NewGuid(), crv);
+                results.Curves.Add(Guid.NewGuid(), crv);
             }
 
             // Procedural intersection
-            foreach (var crv in Results.Curves)
+            foreach (var crv in results.Curves)
             {
                 var intersections = new SortedIntersections(crv);
 
-                foreach(var crv2 in Results.Curves)
+                foreach(var crv2 in results.Curves)
                 {
                     // If equal, continue
                     if (crv.Key == crv2.Key) { continue; }
@@ -75,21 +82,14 @@ namespace Frenchfry
                 }
 
                 // Add Intersections to Results
-                Results.AddSortedIntersections(crv.Key, intersections);
+                results.AddSortedIntersections(crv.Key, intersections);
+
             }
+
+            string wait = "";
 
             // Now we have an organized list of intersection events by curve.
             // Before we can construct the lattice, we need to do some work to support 3+ curve intersections.
-            
-            foreach(var intersection in Results.SortedIntersections)
-            {
-
-            }
-        }
-
-        private void Init()
-        {
-            friedMeshes.Clear();
         }
 
         /// <summary>
@@ -99,6 +99,11 @@ namespace Frenchfry
         {
             get { return this.friedMeshes; }
         }    
+
+        public virtual FryResults Results
+        {
+            get { return this.results; }
+        }
 
     }
 
@@ -139,6 +144,7 @@ namespace Frenchfry
             {
                 if (IntersectionNodes.Count != 0)
                 {
+                    // Check if theres a point existing at that intersection. If so, assign the intersection Id that point Id
                     foreach(var ptPair in IntersectionNodes)
                     {
                         if (inter.ComparePoints(ptPair.Value, tolerance))
@@ -147,11 +153,19 @@ namespace Frenchfry
                             break;
                         }
                     }
-                    if (inter.Id == null)
+                    // If no existing point for this intersection, give the intersection a new Id and assign the point and Id to the dictionary
+                    if (inter.Id == Guid.Empty)
                     {
                         inter.Id = Guid.NewGuid();
                         IntersectionNodes.Add(inter.Id, inter.pA);
                     }
+                }
+
+                else
+                {
+                    // If the dictionary is empty, add the first entry
+                    inter.Id = Guid.NewGuid();
+                    IntersectionNodes.Add(inter.Id, inter.pA);
                 }
             }
         }
@@ -178,6 +192,7 @@ namespace Frenchfry
 
         public SortedIntersections(KeyValuePair<Guid, Curve> curveData, double tolerance = 0.001)
         {
+            myIntersections = new List<FryIntersection>();
             this.myCurveData = curveData;
             this.tolerance = 0.001;
         }
@@ -197,27 +212,24 @@ namespace Frenchfry
 
         public void SortIntersections()
         {
-            foreach(var fryInter in myIntersections)
+            // Arrange intersection points along curve by param
+            myIntersections.Sort((int1, int2) => int1.tA.CompareTo(int2.tA));
+            myIntersections.Reverse();
+
+            // Add flags if intersections include the endpoints of the curve, otherwise these will
+            // need to be generated in the lattice.
+            hasZero = false;
+            hasOne = false;
+
+            foreach (var inter in myIntersections)
             {
-                // Arrange intersection points along curve by param
-                myIntersections.Sort((int1, int2) => int1.tA.CompareTo(int2.tA));
-                myIntersections.Reverse();
-
-                // Add flags if intersections include the endpoints of the curve, otherwise these will
-                // need to be generated in the lattice.
-                hasZero = false;
-                hasOne = false;
-
-                foreach (var inter in myIntersections)
+                if (inter.tA == 0)
                 {
-                    if (inter.tA == 0)
-                    {
-                        hasZero = true;
-                    }
-                    if (inter.tA == 1)
-                    {
-                        hasOne = true;
-                    }
+                    hasZero = true;
+                }
+                if (inter.tA == 1)
+                {
+                    hasOne = true;
                 }
             }
         }
