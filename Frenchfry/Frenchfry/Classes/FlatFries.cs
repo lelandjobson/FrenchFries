@@ -47,8 +47,7 @@ namespace Frenchfry
             {
                 // Reparameterize Curves
                 crv.Domain = new Interval(0.0, 1.0);
-
-                curveDict.Add(new Guid(), crv);
+                curveDict.Add(Guid.NewGuid(), crv);
             }
 
             // Procedural intersection
@@ -129,16 +128,16 @@ namespace Frenchfry
 
         private void Init()
         {
-            intersectionDict.Clear();
-            curveIntervalStorage.Clear();
-            friedMeshes.Clear();
-            curveDict.Clear();
-
             intersectionDict = new Dictionary<Guid, List<IntersectionEvent>>();
             curveIntervalStorage = new List<Interval>();
             friedMeshes = new List<Mesh>();
             curveDict = new Dictionary<Guid, Curve>();
             fryIntersections = new List<FryResult>();
+
+            intersectionDict.Clear();
+            curveIntervalStorage.Clear();
+            friedMeshes.Clear();
+            curveDict.Clear();
         }
 
         /// <summary>

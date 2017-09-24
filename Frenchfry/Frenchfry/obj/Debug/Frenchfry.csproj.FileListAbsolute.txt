@@ -24,3 +24,10 @@ C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\obj\Debug\Frenchfry.Properties.Re
 C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\obj\Debug\Frenchfry.csproj.GenerateResource.Cache
 C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\obj\Debug\Frenchfry.dll
 C:\Users\ljobson\Downloads\Frenchfry\Frenchfry\obj\Debug\Frenchfry.pdb
+C:\Users\Leland Jobson\Documents\GitHub\FrenchFries\Frenchfry\Frenchfry\bin\Debug\Frenchfry.dll
+C:\Users\Leland Jobson\Documents\GitHub\FrenchFries\Frenchfry\Frenchfry\bin\Debug\Frenchfry.pdb
+C:\Users\Leland Jobson\Documents\GitHub\FrenchFries\Frenchfry\Frenchfry\obj\Debug\Frenchfry.csprojResolveAssemblyReference.cache
+C:\Users\Leland Jobson\Documents\GitHub\FrenchFries\Frenchfry\Frenchfry\obj\Debug\Frenchfry.Properties.Resources.resources
+C:\Users\Leland Jobson\Documents\GitHub\FrenchFries\Frenchfry\Frenchfry\obj\Debug\Frenchfry.csproj.GenerateResource.Cache
+C:\Users\Leland Jobson\Documents\GitHub\FrenchFries\Frenchfry\Frenchfry\obj\Debug\Frenchfry.dll
+C:\Users\Leland Jobson\Documents\GitHub\FrenchFries\Frenchfry\Frenchfry\obj\Debug\Frenchfry.pdb
